@@ -1,4 +1,6 @@
+//Get current date using moment.js
 var date = moment().format("ll");
+//get html elements using DOM
 var searchHandler = document.querySelector("#search-form");
 var searchBar = document.querySelector("#search-bar");
 var responseContainer = document.querySelector("#current-result");
@@ -17,7 +19,6 @@ var uvValueDisplay = document.createElement("div");
 
 // 5 day forecast variables
 var forecastContainer = document.querySelector("#forecast-result");
-
 var searchWrapperEl = document.querySelector("#search-wrapper");
 var searchHistoryDiv = document.querySelector("#search-history");
 var cityCount = 1;
@@ -194,6 +195,7 @@ function storeHistory() {
     removePrevious();
 };
 
+
 function loadHistory() {
     if (localStorage.getItem("searchedCities")) {
         var previousSearchCity = JSON.parse(localStorage.getItem("searchedCities"));
@@ -207,7 +209,6 @@ function loadHistory() {
         document.getElementsByClassName("btn")[i].addEventListener('click', function () {
             var btnClicked = this.getAttribute("data-city");
             weatherRequest(btnClicked);
-            console.log(btnClicked);
             removePrevious();
         });
     }
