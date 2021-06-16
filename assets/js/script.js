@@ -215,7 +215,7 @@ function loadHistory() {
 };
 
 // remove previously searched weather info
-var removePrevious = function () {
+ function removePrevious() {
     cityNameEl.remove();
     uvIndexContainer.remove();
     forecastContainer.innerHTML = "";
