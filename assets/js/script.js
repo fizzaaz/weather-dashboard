@@ -139,7 +139,7 @@ var weatherRequest = function (city) {
         });
 };
 
-var searchEvent = function (event) {
+function searchEvent(event) {
     event.preventDefault();
     // clicking search button submits value and calls weatherRequest function
     var searchValue = searchBar.value.trim().toUpperCase();
@@ -158,13 +158,15 @@ var searchEvent = function (event) {
 };
 
 function createBtn(city) {
-    // create btns
+    // create btns of searched city
     var citySearch = document.createElement("button");
     citySearch.textContent = city;
+    //adding css
     citySearch.classList = "btn btn-info btn-block";
     citySearch.setAttribute("data-city", city);
     citySearch.setAttribute("type", "submit");
     citySearch.setAttribute("id", "city-" + city);
+    //add button on top of html elements
     searchHistoryDiv.prepend(citySearch);
 };
 

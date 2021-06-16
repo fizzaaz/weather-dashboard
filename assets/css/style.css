@@ -1,14 +1,9 @@
-* {
-    box-sizing: border-box;
-}
 
 :root {
     --primary: black;
     --secondary: slategray;
     --container: lightgray;
-    --background: ghostwhite;
-    --heading-font: "Kumbh Sans", sans-serif;
-    --text-font: "Montserrat", sans-serif;
+    --background: white;
 }
 
 .primary-text {
