@@ -18,9 +18,10 @@ To install this application, you will need a text editor. I would recommend Visu
 To install this code, download the zip file, or use GitHub's guidelines to clone the repository. 
 
 ### Summary
-This application emphasizes the use of Jquery to provide a simple planner application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. In this application, we have used the Moment.js library to work with date and time. This planner app, loops through the typical business hours at current date and allows the user to enter and save their plan into any description field that has a class of future. Also, the localStorage of the browser is used to store the data. The past hours are highlighted gray, the current hour red, and future hours green.
 
-![](assets/images/SS.JPG)
+This is a weather forecast dashboard app. Users are able to enter a city name in the search box and have current weather conditions displayed for that city, as well a five day forecast. The UV index value will change color from green, yellow and red based on the severity of the UV index. Searched cities will be added below the search button and can be clicked on to display that cities weather data again.
+
+![](assets/images/MAIN.JPG)
 
 ### Features: 
 * Current Date
