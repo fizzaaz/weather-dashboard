@@ -51,12 +51,12 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 ![](assets/images/BG.JPG)
 
 ### Project Requirements
-  * WHEN the user opens the planner THEN the current day is displayed at the top of the calendar
-  * WHEN the user scroll down THEN I am presented with time blocks for standard business hours
-  * WHEN the user view the time blocks for that day THEN each time block is color-coded to indicate whether it is in the past, present, or future.
-  * WHEN the user clicks into a time block THEN I can enter an event
-  * WHEN the user clicks the save button for that time block THEN the text for that event is saved in local storage
-  * WHEN the user refreshes the page THEN the saved events persist
+  * WHEN I search for a city THEN I am presented with current and future conditions for that city and that city is added to the search history
+  * WHEN I view current weather conditions for that city THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.
+  * WHEN I view the UV index THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe.
+  * WHEN I view future weather conditions for that city THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
+  * WHEN I click on a city in the search history THEN I am again presented with current and future conditions for that city.
+  
  
 ### This project has script features of:
 * Tells browser to load 1)html & 2)css first.
