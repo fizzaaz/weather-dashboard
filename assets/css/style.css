@@ -5,6 +5,7 @@
     margin-bottom: 25px;
     background-color: navy;
 }
+
 /*adds space on the top of heading */
 .heading {
     margin-top: 10px;
@@ -80,7 +81,7 @@
 .forecast-class {
     display: flex;
     justify-content: space-between;
-    background-color: lightblue;
+    background-color: navy;
     border-radius: .25rem;
 }
 /*setting icon size*/

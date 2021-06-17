@@ -50,21 +50,21 @@ function weatherRequest (city) {
             responseContainer.appendChild(cityDetailsDiv);
 
             // create element for the city name response   
-            cityNameEl.innerHTML = "<h2 class='secondary-text'>Current Weather for <span class='font-weight-bold'>" + response.name
+            cityNameEl.innerHTML = "<h2 >Current Weather for <span class='font-weight-bold'>" + response.name
                 + "</span></h2><br><img class='icon' src='http://openweathermap.org/img/w/" + response.weather[0].icon
                 + ".png' alt=Current weather icon/><br><br><h2 class='font-weight-bold secondary-text'>" + date + "</h2><br>";
             cityTempDiv.appendChild(cityNameEl);
 
             // create element to display the current temperature
-            currentTempEl.innerHTML = "<h3 class='secondary-text'>Current Temperature:<span class='font-weight-bold'>" + " " + Math.round(response.main.temp) + "&#176F</span></h3><br>";
+            currentTempEl.innerHTML = "<h3 >Current Temperature:<span class='font-weight-bold'>" + " " + Math.round(response.main.temp) + "&#176F</span></h3><br>";
             cityTempDiv.appendChild(currentTempEl);
 
             // create element to display humidity
-            humidityEl.innerHTML = "<h4 class='secondary-text'>Humidity:<span class='font-weight-bold'>" + " " + response.main.humidity + "%</span></h4>";
+            humidityEl.innerHTML = "<h4 >Humidity:<span class='font-weight-bold'>" + " " + response.main.humidity + "%</span></h4>";
             cityDetailsDiv.appendChild(humidityEl);
 
             // create element to display wind speed
-            windEl.innerHTML = "<h4 class='secondary-text'>Wind Speed:<span class='font-weight-bold'>" + " " + Math.round(response.wind.speed) + " MPH</span></h4>";
+            windEl.innerHTML = "<h4 >Wind Speed:<span class='font-weight-bold'>" + " " + Math.round(response.wind.speed) + " MPH</span></h4>";
             cityDetailsDiv.appendChild(windEl);
 
 
