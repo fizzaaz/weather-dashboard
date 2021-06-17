@@ -23,6 +23,8 @@ var searchWrapperEl = document.querySelector("#search-wrapper");
 var searchHistoryDiv = document.querySelector("#search-history");
 var cityCount = 1;
 
+//check validation
+var status=false;
 // function to fetch weather api - city is received from searchEvent function as searchValue 
 function weatherRequest (city) {
     if (!city) {
@@ -33,7 +35,8 @@ function weatherRequest (city) {
     fetch(weatherApi)
         .then(function (response) {
             if (!response || !response.ok) {
-                throw new Error('There was an error');
+                status=true;
+                throw new Error('Opps! Please Enter a valid city name');
             };
             return response.json();
         })
