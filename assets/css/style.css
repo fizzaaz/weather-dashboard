@@ -1,27 +1,16 @@
-
-:root {
-    --primary: black;
-    --secondary: slategray;
-    --container: lightgray;
-    --background: white;
-}
-
 .header {
     display: flex;
-    background-color: var(--secondary);
     justify-content: center;
     text-align: center;
     margin-bottom: 25px;
 }
 
 .heading {
-    color: var(--primary);
-    font-family: var(--heading-font);
+    color: black;
     margin-top: 10px;
 }
 
 .search-label {
-    font-family: var(--text-font);
     font-weight: bold;
     margin-top: 5px;
 }
