@@ -3,21 +3,24 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 25px;
+    background-color: navy;
 }
 /*adds space on the top of heading */
 .heading {
     margin-top: 10px;
+font-style: oblique;
 }
 
 /*search label bolded and added space on top */
 .search-label {
     font-weight: bold;
     margin-top: 5px;
+    color: white;
 }
 
 /*adds backgournd color on left search block*/
 .search-wrap-style {
-    background-color: lightblue;
+    background-color: navy;
 }
 
 .text-input {
@@ -26,11 +29,12 @@
 
 /*display the forecast in a flex box & adds space between each box*/
 .current-style {
+    color: white;
     display: flex;
     justify-content: space-between;
     text-align: center;
     /*adds background color*/
-    background-color: lightblue;
+    background-color: navy;
     margin-bottom: 8px;
     border-radius: .25rem;
 }

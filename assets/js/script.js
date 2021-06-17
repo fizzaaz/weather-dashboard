@@ -88,7 +88,7 @@ function weatherRequest (city) {
             uvValueDisplay.innerHTML = uvValue;
             uvIndexContainer.appendChild(uvIndexEl);
             uvIndexContainer.appendChild(uvValueDisplay);
-
+            //setting uv index display color wrt value
             if (uvResponse.value > 7) {
                 document.querySelector("#uv-index").classList = "uv-result rounded bg-danger";
             } else if (uvResponse.value >= 2 && uvResponse.value <= 7) {
@@ -160,6 +160,7 @@ function searchEvent(event) {
 
 function createBtn(city) {
     // create btns of searched city
+ 
     var citySearch = document.createElement("button");
     citySearch.textContent = city;
     //adding css
@@ -169,6 +170,7 @@ function createBtn(city) {
     citySearch.setAttribute("id", "city-" + city);
     //add button on top of html elements
     searchHistoryDiv.prepend(citySearch);
+    
 };
 
 function clearHistory() {
