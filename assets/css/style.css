@@ -6,14 +6,6 @@
     --background: white;
 }
 
-.primary-text {
-    font-family: var(--heading-font)
-}
-
-.secondary-text {
-    font-family: var(--text-font);
-}
-
 .header {
     display: flex;
     background-color: var(--secondary);
