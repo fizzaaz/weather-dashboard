@@ -24,7 +24,7 @@ var searchHistoryDiv = document.querySelector("#search-history");
 var cityCount = 1;
 
 // function to fetch weather api - city is received from searchEvent function as searchValue 
-var weatherRequest = function (city) {
+function weatherRequest (city) {
     if (!city) {
         return;
     };
@@ -149,11 +149,9 @@ function searchEvent(event) {
         weatherRequest(searchValue);
         createBtn(searchValue);
         storeHistory();
-        // document.querySelector("#search-bar").value = "";
     } else {
-
-        //if search is empty, throw an alert. CHANGE TO A MODAL LATER
-        alert("Please enter a city to see its current weather.");
+        //if search is empty, throw an alert. 
+        alert("Opps!, Please Enter the city name");
     };
 };
 
