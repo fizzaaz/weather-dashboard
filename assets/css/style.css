@@ -8,7 +8,7 @@
 /*adds space on the top of heading */
 .heading {
     margin-top: 10px;
-font-style: oblique;
+    font-weight: 500;
 }
 
 /*search label bolded and added space on top */
