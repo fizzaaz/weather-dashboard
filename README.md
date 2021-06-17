@@ -1,13 +1,13 @@
 # Work Day Scheduler
 
 <h4>Designed and coded by <a href="https://github.com/fizzaaz">FIZZA ZAIDI</a></h4>
-This project was designed as a homework assignment for UT Austin coding bootcamp. This application emphasizes the use of jQuery to dynamically update the HTML and CSS code to generate the Work Day Scheduler.
+This project was designed as a homework assignment for UT Austin coding bootcamp. This application emphasizes to fetching the data from another application's API and use it to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
 ## Getting Started
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
-* [GitHub Repository]()
-* [Deployed GitHub IO]()
+* [GitHub Repository](https://github.com/fizzaaz/weather-dashboard)
+* [Deployed GitHub IO](https://fizzaaz.github.io/weather-dashboard/)
 
 ### Prerequisites
 
