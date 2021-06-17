@@ -230,6 +230,7 @@ function loadHistory() {
 };
 //on Clicking search btn
 searchHandler.addEventListener("submit", searchEvent);
+//on clicing delete btn
 deleteBtn.addEventListener("click", clearHistory);
 
 loadHistory();
