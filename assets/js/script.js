@@ -141,27 +141,7 @@ function weatherRequest(city) {
             return;
         });
 };
-function check_city(city)
-{
-    var bool;
-    if (localStorage.getItem("searchedCities")) {
-        //parsing string. everything we fetched from browser is in string
-        var previousSearchCity = JSON.parse(localStorage.getItem("searchedCities"));
-        for (var i = 0; i < previousSearchCity.length; i++) {
-            //create btn for each previous searched city
-            if(city==previousSearchCity[i].toUpperCase())
-            {
-                bool=true;
-                i=previousSearchCity.length;
-            }
-            else 
-            {
-                bool=false;
-            }
-        }
-    };
-    return bool;
-}
+
 
 function searchEvent(event) {
     event.preventDefault();
@@ -171,11 +151,9 @@ function searchEvent(event) {
     if (searchValue) {
         // Correct way to implement is to catch any errors happening from weatherRequest and skip createBtn/storeHistory
         weatherRequest(searchValue);
-        if(check_city(searchValue)==false)
-        {
+      
             createBtn(searchValue);
 
-        }
         storeHistory();
     } else {
         //if search is empty, throw an alert. 
