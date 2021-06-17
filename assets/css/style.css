@@ -15,6 +15,7 @@
     margin-top: 5px;
 }
 
+/*adds backgournd color on left search block*/
 .search-wrap-style {
     background-color: lightblue;
 }
@@ -23,25 +24,27 @@
     margin-bottom: 5px;
 }
 
+/*display the forecast in a flex box & adds space between each box*/
 .current-style {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    /*adds background color*/
     background-color: lightblue;
     margin-bottom: 8px;
     border-radius: .25rem;
 }
-
+/*display the weather details in a flex box & adds space evenly*/
 .detail-div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-
+/*sets the icon size*/
 .icon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .results {
@@ -76,12 +79,13 @@
     background-color: lightblue;
     border-radius: .25rem;
 }
-
+/*setting icon size*/
 .forecast-icon {
     width: 75px;
     height: 75px;
 }
 
+/*Responsive*/
 @media screen and (max-width: 1199px) {
     .heading {
         font-size: 2rem;
