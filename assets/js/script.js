@@ -232,5 +232,5 @@ function loadHistory() {
 searchHandler.addEventListener("submit", searchEvent);
 //on clicing delete btn
 deleteBtn.addEventListener("click", clearHistory);
-
+//on load fetch previously searched data from local storage
 loadHistory();
