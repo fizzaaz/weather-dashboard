@@ -24,9 +24,9 @@ var searchHistoryDiv = document.querySelector("#search-history");
 var cityCount = 1;
 
 //check validation
-var status=false;
+var status = false;
 // function to fetch weather api - city is received from searchEvent function as searchValue 
-function weatherRequest (city) {
+function weatherRequest(city) {
     if (!city) {
         return;
     };
@@ -35,7 +35,7 @@ function weatherRequest (city) {
     fetch(weatherApi)
         .then(function (response) {
             if (!response || !response.ok) {
-                status=true;
+                status = true;
                 throw new Error('Opps! Please Enter a valid city name');
             };
             return response.json();
@@ -141,6 +141,27 @@ function weatherRequest (city) {
             return;
         });
 };
+function check_city(city)
+{
+    var bool;
+    if (localStorage.getItem("searchedCities")) {
+        //parsing string. everything we fetched from browser is in string
+        var previousSearchCity = JSON.parse(localStorage.getItem("searchedCities"));
+        for (var i = 0; i < previousSearchCity.length; i++) {
+            //create btn for each previous searched city
+            if(city==previousSearchCity[i].toUpperCase())
+            {
+                bool=true;
+                i=previousSearchCity.length;
+            }
+            else 
+            {
+                bool=false;
+            }
+        }
+    };
+    return bool;
+}
 
 function searchEvent(event) {
     event.preventDefault();
@@ -150,7 +171,11 @@ function searchEvent(event) {
     if (searchValue) {
         // Correct way to implement is to catch any errors happening from weatherRequest and skip createBtn/storeHistory
         weatherRequest(searchValue);
-        createBtn(searchValue);
+        if(check_city(searchValue)==false)
+        {
+            createBtn(searchValue);
+
+        }
         storeHistory();
     } else {
         //if search is empty, throw an alert. 
@@ -160,7 +185,7 @@ function searchEvent(event) {
 
 function createBtn(city) {
     // create btns of searched city
- 
+
     var citySearch = document.createElement("button");
     citySearch.textContent = city;
     //adding css
@@ -170,7 +195,7 @@ function createBtn(city) {
     citySearch.setAttribute("id", "city-" + city);
     //add button on top of html elements
     searchHistoryDiv.prepend(citySearch);
-    
+
 };
 
 function clearHistory() {
@@ -200,11 +225,13 @@ function storeHistory() {
     removePrevious();
 };
 
-
+//call on load
 function loadHistory() {
     if (localStorage.getItem("searchedCities")) {
+        //parsing string. everything we fetched from browser is in string
         var previousSearchCity = JSON.parse(localStorage.getItem("searchedCities"));
         for (var i = 0; i < previousSearchCity.length; i++) {
+            //create btn for each previous searched city
             createBtn(previousSearchCity[i]);
         }
     };
@@ -220,7 +247,7 @@ function loadHistory() {
 };
 
 // remove previously searched weather info
- function removePrevious() {
+function removePrevious() {
     cityNameEl.remove();
     uvIndexContainer.remove();
     forecastContainer.innerHTML = "";
