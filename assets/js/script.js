@@ -228,7 +228,7 @@ function loadHistory() {
     humidityEl.remove();
     windEl.remove();
 };
-
+//on Clicking search btn
 searchHandler.addEventListener("submit", searchEvent);
 deleteBtn.addEventListener("click", clearHistory);
 
