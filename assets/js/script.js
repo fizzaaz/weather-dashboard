@@ -106,7 +106,7 @@ function weatherRequest (city) {
             // for loop to display 5 day forecast
             for (var i = 1; i < 6; i++) {
                 var forecastEl = document.createElement("div");
-                forecastEl.classList = "forecast-card card-body rounded-lg border-dark bg-info text-light";
+                forecastEl.classList = "forecast-card card-body rounded-lg border-dark bg-primary text-light";
                 forecastContainer.appendChild(forecastEl);
 
                 // display date 
@@ -164,7 +164,7 @@ function createBtn(city) {
     var citySearch = document.createElement("button");
     citySearch.textContent = city;
     //adding css
-    citySearch.classList = "btn btn-info btn-block";
+    citySearch.classList = "btn btn-primary btn-block";
     citySearch.setAttribute("data-city", city);
     citySearch.setAttribute("type", "submit");
     citySearch.setAttribute("id", "city-" + city);
