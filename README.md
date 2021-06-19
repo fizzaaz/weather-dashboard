@@ -19,28 +19,28 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 
 ### Summary
 
-This is a weather forecast dashboard app. Users are able to enter a city name in the search box and have current weather conditions displayed for that city, as well a five day forecast. The UV index value will change color from green, yellow and red based on the severity of the UV index. Searched cities will be added below the search button and can be clicked on to display that cities weather data again.
+This is a weather forecast dashboard app. Users are able to enter a city name in the search box and have current weather conditions displayed for that city, as well a five days forecast. The UV index value will change color from green, yellow and red based on the severity of the UV index. Searched cities will be added below the search button and can be clicked on to display that cities weather data again.
 
 ![](assets/images/MAIN.JPG)
 
 ### Features: 
-* Current Date
-    * This displays the current day at the top of the calendar.
+* Search Section
+    * This allows the user to enter the city to see the weather condition of that city. Also, buttons are created dynamically of previously searched cities.
 
-![](assets/images/Main.JPG)
+![](assets/images/search.JPG)
 
-* Time Block
-    * This displays the typical business hours (9am to 5pm) in a horizontal layout.
+* Current weather forecast
+    * This displays the current weather forecast of the entered city. This block displays the uv index, temperature , wind speed , humidity , icon and current date.
     
-![](assets/images/TB.JPG)
+![](assets/images/current.JPG)
 
-* Text Area: 
-    * It allows the user to enter their descriptive plan with respect specific business hour displayed in time block.
+* 5 day forecast
+    * Displays the 5 day forecast of searched city in the flexboxes. 
 
-![](assets/images/TA.JPG)
+![](assets/images/5day.JPG)
 
-* Save Button
-    * This allows the user to save their plan at a specific business hour in a local storage.
+* Icon
+    * Displays the weather situation using pictorial representation. 
 
 * Local Storage 
     * It is used to store the user's plan at specific time. The set and get methods are used to store and fetch the data from local storage respectively.
