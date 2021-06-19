@@ -42,8 +42,11 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 * Icon
     * Displays the weather situation using pictorial representation. 
 
-* Local Storage 
-    * It is used to store the user's plan at specific time. The set and get methods are used to store and fetch the data from local storage respectively.
+![](assets/images/icon.JPG)
+
+
+* UV index
+    * Displays the current weather situation by changing the color from green, yellow and red according to the severity of the UV index. 
     
 * Color-coded
     * The three colors are used to indicate the past, present and future event. Grey color indicates that time is past, red indicates that the time is present and green shows that time is future.
