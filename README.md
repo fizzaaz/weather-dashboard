@@ -23,6 +23,10 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 
 ![](assets/images/MAIN.JPG)
 
+### Goal
+
+This app was created using the Open Weather Map data API. In order to get all the information needed, a good deal of manipulation of the response from the get request was needed, including taking information from one response to generate a new request. For example, the initial search based on city name returns latitude and longitude coordinates, and these coordinates are used in the UV Index get request.
+
 ### Features: 
 * Search Section
     * This allows the user to enter the city to see the weather condition of that city. Also, buttons are created dynamically of previously searched cities.
@@ -47,8 +51,7 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 
 * UV index
     * Displays the current weather situation by changing the color from green, yellow and red according to the severity of the UV index. 
-    
-
+ 
 ![](assets/images/uv.JPG)
 
 ### Project Requirements
@@ -57,22 +60,7 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
   * WHEN the user view the UV index THEN the user is presented with a color that indicates whether the conditions are favorable, moderate, or severe.
   * WHEN the user view future weather conditions for that city THEN the user is presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
   * WHEN the user clicks on a city in the search history THEN the user is again presented with current and future conditions for that city.
-  
- 
-### This project has script features of:
-* Tells browser to load 1)html & 2)css first.
-* Display current day.
-* An event listener (onclick) that generates time interval
-* Taken the change from the sibling html description attribute
-* Taken the change from the parent html id attribute
-* Set items in local storage.
-* Get items from the local storage.
-* Get current number of hours.
-* Should follow html 24 hour to 12 hour conversion.
-* use of moment.js
-* loop over time blocks
-* check if we've moved past this time, or we're in present, or future
-* 
+   
 ### File Types: 
 * HTML
     * Index.html 
