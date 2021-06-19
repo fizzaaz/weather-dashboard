@@ -48,17 +48,15 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 * UV index
     * Displays the current weather situation by changing the color from green, yellow and red according to the severity of the UV index. 
     
-* Color-coded
-    * The three colors are used to indicate the past, present and future event. Grey color indicates that time is past, red indicates that the time is present and green shows that time is future.
 
-![](assets/images/BG.JPG)
+![](assets/images/uv.JPG)
 
 ### Project Requirements
-  * WHEN I search for a city THEN I am presented with current and future conditions for that city and that city is added to the search history
-  * WHEN I view current weather conditions for that city THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.
-  * WHEN I view the UV index THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe.
-  * WHEN I view future weather conditions for that city THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
-  * WHEN I click on a city in the search history THEN I am again presented with current and future conditions for that city.
+  * WHEN the user searchs for a city THEN the user is presented with current and future conditions for that city and that city is added to the search history.
+  * WHEN the user view current weather conditions for that city THEN the user presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.
+  * WHEN the user view the UV index THEN the user is presented with a color that indicates whether the conditions are favorable, moderate, or severe.
+  * WHEN the user view future weather conditions for that city THEN the user is presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
+  * WHEN the user clicks on a city in the search history THEN the user is again presented with current and future conditions for that city.
   
  
 ### This project has script features of:
@@ -79,7 +77,7 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
 * HTML
     * Index.html 
         * Contains the links to moment.js and bootstrap libraries.
-        * Contains the basic information display on a browser and the basic structure of a application that is featured by jQuery.
+        * Contains the basic information display on a browser and the basic structure of a application that is featured by Javascript and css.
 * CSS Page
     * Styles.css
         * contains styling properties for html elements
@@ -91,4 +89,5 @@ This is a weather forecast dashboard app. Users are able to enter a city name in
         * For Loops
         * Functions 
         * Local Storage set and get function
+        * API
  
